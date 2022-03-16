@@ -1,3 +1,4 @@
+import re
 from django.shortcuts import render
 from .models import Message
 # Create your views here.
@@ -10,4 +11,10 @@ def room(request, room_name):
   messages = Message.objects.filter(room=room_name)[0:25]
   return render(request, 'chat/room.html', {'room_name': room_name, 'username': username, 'messages': messages})
   
+def demo(request):
+  return render(request, 'chat/demo.html')  
+
+
+
+
   
