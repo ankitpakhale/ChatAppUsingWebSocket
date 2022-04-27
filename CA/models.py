@@ -58,4 +58,9 @@ class Message(models.Model):
     date_added = models.DateTimeField(auto_now_add=True)
 
     class Meta:
+<<<<<<< HEAD
         ordering = ('date_added',)
+        
+=======
+        ordering = ('date_added',)
+>>>>>>> 1f48c6b25ae716c12ffe748fb8de316323967623
