@@ -6,6 +6,7 @@ from django.contrib import messages
 from datetime import datetime
 # Create your views here.
 
+
 # CA signup form
 def SignupView(self):
     if self.POST:
